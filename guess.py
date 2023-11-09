@@ -4,9 +4,13 @@
 #猜錯: 告訴使用者 要更大或更小 
 
 import random
-r = random.randint(1,100)
 
 print ('猜數字遊戲開始了!')
+s = input('請設定範圍最小整數: ')
+e = input('請設定範圍最大整數: ')
+s = int(s)
+e = int(e)
+r = random.randint(s,e)
 number = input('請輸入你猜的數字: ')
 number = int(number)
 count = 1
